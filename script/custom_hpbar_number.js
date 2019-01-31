@@ -3,9 +3,9 @@
 
 MapHpDecorator._setupDecorationFromType = function(type) {
 	var obj = root.getHpDecoration(type);
-  var pos = this._getPos();  //表示位置取得
+        var pos = this._getPos();  //表示位置取得
   
-  var width = 32; //横幅指定
+        var width = 32; //横幅指定
 	var height = 10;  //高さ指定
 		
 	var color = this._getColor(type);  //色取得
