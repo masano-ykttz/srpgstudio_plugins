@@ -21,7 +21,7 @@ LoadSaveScrollbar._drawFileTitle= function(xBase, yBase, index) {
 	NumberRenderer.drawNumberColor(x + width + dx, y + 17, n, this._getNumberColorIndex(), 255);
 };
 
-//おまけ、色変更したい人用
+//おまけ、色変更したい人用(数字の色IDで設定？）
 LoadSaveScrollbar._getNumberColorIndex: function() {
 	return 4;
 };
