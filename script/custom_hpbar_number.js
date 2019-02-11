@@ -6,8 +6,8 @@ MapHpDecorator._setupDecorationFromType = function(type) {
         var pos = this._getPos();  //表示位置取得
   
         var width = 32; //横幅指定
-	var height = 10;  //高さ指定
-		
+	var height = 4;  //高さ指定（本来の高さは10）
+	
 	var color = this._getColor(type);  //色取得
 	var alpha = this._getAlpha(type);  //透明度取得
 	var strokeColor = 0xff;
@@ -50,7 +50,7 @@ MapHpDecorator._getNumberColorIndex: function(type) {
 //表示位置の指定。
 MapHpDecorator._getPos: function() {
   var x = 1;   //x座標、大きいほど右に寄る
-  var y = 20;  //y座標、大きいほど下に寄る
+  var y = 28;  //y座標、大きいほど下に寄る（本来の高さは20）
 
   //mapchipの1マスが32x32(px)でないときの調整用
   if (GraphicsFormat.MAPCHIP_WIDTH !== 32 || GraphicsFormat.MAPCHIP_HEIGHT !== 32) {
