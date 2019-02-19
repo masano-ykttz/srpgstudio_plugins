@@ -1,6 +1,6 @@
 //セーブ番号ラベル位置調整
 //screen-loadsave.jsから抜き出して改変
-LoadSaveScrollbar._drawFileTitle= function(xBase, yBase, index) {
+LoadSaveScrollbar._drawFileTitle = function(xBase, yBase, index) {
   
     //mx,myの数値を変更してラベル位置を調整してください。
     var mx = 15;   //横方向の位置
@@ -21,6 +21,6 @@ LoadSaveScrollbar._drawFileTitle= function(xBase, yBase, index) {
 };
 
 //おまけ、色変更したい人用(数字の色IDで設定？）
-LoadSaveScrollbar._getNumberColorIndex: function() {
+LoadSaveScrollbar._getNumberColorIndex = function() {
 	return 4;
 };
