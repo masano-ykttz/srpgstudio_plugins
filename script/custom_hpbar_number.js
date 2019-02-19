@@ -31,24 +31,24 @@ MapHpDecorator._setupDecorationFromType = function(type) {
 	obj.endDecoration();
 };
 
-MapHpDecorator._getColor: function(type) {
+MapHpDecorator._getColor = function(type) {
   //HPの割合による色指定(0xの後の6桁を0~Fで指定。0x[R][G][B]となる)
   var arr = [0x00ffff, 0x00ff00, 0xffff00, 0xff0000];
 
   return arr[type];
 };
 	
-MapHpDecorator._getAlpha: function(type) {
+MapHpDecorator._getAlpha = function(type) {
   //透明度指定（初期値204、値が小さいほど透明になる）
   return 204;
 };
 
-MapHpDecorator._getNumberColorIndex: function(type) {
+MapHpDecorator._getNumberColorIndex = function(type) {
   return 0;
 };
 
 //表示位置の指定。
-MapHpDecorator._getPos: function() {
+MapHpDecorator._getPos = function() {
   var x = 1;   //x座標、大きいほど右に寄る
   var y = 28;  //y座標、大きいほど下に寄る（本来の高さは20）
 
