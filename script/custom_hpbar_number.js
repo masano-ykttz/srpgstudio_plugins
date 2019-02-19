@@ -22,7 +22,11 @@ MapHpDecorator._setupDecorationFromType = function(type) {
 		obj.setStrokeInfo(strokeColor, strokeAlpha, 1, true);
 		obj.addRectangle(pos.x, pos.y, width, height); //四角の描画
 		
-		obj.addHp(pos.x, pos.y, this._getNumberColorIndex(hpType));  //数字(HP数値)の描画
+		//数値表示だけずらすとき用パラメータ
+		var pos2x = 0; //数値のx座標をずらす
+		var pos2y = 4; //数値のy座標をずらす
+		
+		obj.addHp(pos.x - pos2x, pos.y - pos2y, this._getNumberColorIndex(hpType));  //数字(HP数値)の描画
 	}
 	else if (hpType === 1) {
 		obj.addGauge(pos.x, pos.y, 1);
