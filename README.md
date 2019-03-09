@@ -23,8 +23,8 @@ SRPG Studio利用規約に則り、**SRPG Studio作品での利用のみ可能�
 動作の完全な保証は致しかねます。
 ##  各種リンク
 SRPG Studio 公式サイト（サファイアソフト様）　http://srpgstudio.com/  
-作ったSRPG Studio作品（ふりーむのページ）　https://www.freem.ne.jp/brand/6505  
-リポジトリ作成者Twitter https://twitter.com/briz_masano02
+リポジトリ作成者Twitter https://twitter.com/briz_masano02  
+ついでに作ったSRPG Studio作品（ふりーむのページ）　https://www.freem.ne.jp/brand/6505  
 
 
 
