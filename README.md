@@ -13,7 +13,7 @@ SRPG Studio利用規約に則り、**SRPG Studio作品での利用のみ可能�
 **スクリプトを改変したり、再配布・転載可能**ですが、**販売は禁止です**。  
 （そもそも公式のスクリプトの必要部分抜き出して弄っただけのものですので……。）  
 その他の使用に関してもSRPG Studio利用規約に準じます  
-【参考：SRPG Studio利用規約(公式)】http://srpgstudio.com/guide/rules.html  
+【参考：[SRPG Studio利用規約(公式)](http://srpgstudio.com/guide/rules.html)】  
   
 なお、使用したことによるクレジット表記は不要です。  
 （表記していただける場合は引用・配布元としての記載でお願いします。）  
@@ -22,9 +22,9 @@ SRPG Studio利用規約に則り、**SRPG Studio作品での利用のみ可能�
 実際にSRPG Studio作品に使用したのをある程度整えてプラグイン化したものですが、  
 動作の完全な保証は致しかねます。
 ##  各種リンク
-SRPG Studio 公式サイト（サファイアソフト様）　http://srpgstudio.com/  
-リポジトリ作成者Twitter https://twitter.com/briz_masano02  
-ついでに作ったSRPG Studio作品（ふりーむのページ）　https://www.freem.ne.jp/brand/6505  
+[SRPG Studio 公式サイト](http://srpgstudio.com/)（サファイアソフト様）   
+[リポジトリ作成者Twitter](https://twitter.com/briz_masano02)  
+⇒作ったSRPG Studio作品（ふりーむのページ）は[こちら](https://www.freem.ne.jp/brand/6505)  
 
 
 
