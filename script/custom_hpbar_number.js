@@ -64,7 +64,10 @@ MapHpDecorator._getAlpha = function(type) {
 };
 
 MapHpDecorator._getNumberColorIndex = function(type) {
-  //表示される数字。「リソース使用箇所->UI->数字」で指定された数字画像のIDを指定
+  //表示される数字の色を指定。
+  //初期値は0（白）。色の順番についてはSRPGStudio公式ユーザー・マニュアルの素材規格を参照してください。
+  //なお数字の画像はSRPGStudio本体の「リソース＞リソース使用箇所」からUIタブを選択し、
+  //「マップHP数字」を選んで画像を設定してください。
   return 0;
 };
 
