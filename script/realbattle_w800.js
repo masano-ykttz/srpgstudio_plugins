@@ -171,7 +171,7 @@ UIBattleLayout._drawFaceArea= function(unit, isRight) {
 	}
 	else {
 		x = 0 + dx;
-		isReverse = true;
+		isReverse = true;  //顔画像を反転させない場合はここをfalseにするか、この行をコメントアウトする
 	}
 	
 	y = (0 + this._getBattleAreaHeight()) - GraphicsFormat.FACE_HEIGHT - 15;
