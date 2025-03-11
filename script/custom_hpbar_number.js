@@ -53,7 +53,7 @@ MapHpDecorator._getColor = function(type) {
   //HPの割合による色指定(0xの後の6桁を0~Fで指定。0x[R][G][B]となる)
   var arr = [0x00ffff, 0x00ff00, 0xffff00, 0xff0000];
 
-　//var arr = [0x00ffff, 0x00ff00, 0xffff00, 0xff0000];  //初期値（バックアップ用）
+  //var arr = [0x00ffff, 0x00ff00, 0xffff00, 0xff0000];  //初期値（バックアップ用）
 	
   return arr[type];
 };
