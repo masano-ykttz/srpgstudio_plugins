@@ -1,8 +1,15 @@
 //マップ上でのHP表示設定で「数値」を選択した場合に表示されるHPバーを細くするプラグイン
-//公式のsingleton-currentmap.js参照
+//SRPG Studio本体スクリプトのsingleton-currentmap.jsと
+//公式プラグインのhighlevel-statedecoration.jsを基に作成しています。
 //一部変数を変更することで表示方法を調整できます。
 //利用に関する規約は下記URLのリポジトリ内にあるREADMEをご確認ください。
 //https://github.com/masano-ykttz/srpgstudio_plugins
+//
+//注意事項
+//MapHpDecoratorを書き換える他のプラグインと競合する可能性があります。
+//例：公式プラグインのhighlevel-statedecoration.js 等
+//導入の際にはご注意ください。競合を回避したい場合は必要な部分をコメントアウトする等で対処をお願いします。
+//なお、調整の為にプラグインを改変する場合は自己責任でお願いいたします。
 
 MapHpDecorator._setupDecorationFromType = function(type) {
 	var obj = root.getHpDecoration(type);
@@ -36,13 +43,27 @@ MapHpDecorator._setupDecorationFromType = function(type) {
 		var pos2y = 4; //数値のy座標をずらす。数値が大きいほど下にずれる
 		/*****************************  調整可能箇所ここまで  *****************************/
 		
-		obj.addHp(pos.x - pos2x, pos.y - pos2y, this._getNumberColorIndex(hpType));  //数字(HP数値)の描画
+		this._addHp(obj, pos, this._getNumberColorIndex(hpType), pos2x, pos2y);  //数字(HP数値)の描画
 	}
 	else if (hpType === 1) {
 		obj.addGauge(pos.x, pos.y, 1);
 	}
 	
 	obj.endDecoration();
+};
+
+MapHpDecorator._addHp = function(obj, pos, colorIndex, dx, dy) {
+    
+    obj.addHp(pos.x - dx, pos.y - dy, colorIndex);  //「マップHP数字」で選択した画像で表示
+    
+    //ver1.310で実装されたaddByBigNumberを使用する場合、
+    //上記の「obj.addHP～」をコメントアウト（行頭に「//」を追加）し、
+    //下記のコメントアウト（「/*」と「*/」）を外してください。
+    /*
+    var list = root.getBaseData().getUIResourceList(UIType.BIGNUMBER, true);  //「リソース使用箇所 ＞ UI ＞大きい数字」の画像を取得
+    var pic = list.getData(0);
+    obj.addHpByBigNumber(pos.x - dx, pos.y - dy, colorIndex, pic);  //「大きい数字」で選択した画像で表示
+    */
 };
 
 MapHpDecorator._getColor = function(type) {
